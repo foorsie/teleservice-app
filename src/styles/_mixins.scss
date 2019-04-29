@@ -1,0 +1,21 @@
+@import'variables.scss';
+
+@mixin box-shadow {
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.1);
+  }
+
+@mixin color($color) {
+    color: $color;
+}
+
+@mixin textcase($case){
+    text-transform: $case;
+}
+
+@mixin size($size) {
+    font-size: $size;
+}
+
+@mixin weight($weight) {
+    font-weight: $weight;
+}

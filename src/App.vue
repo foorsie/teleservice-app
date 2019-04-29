@@ -1,28 +1,74 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+      
+      <header class="header-main">
+        <Header/>
+      </header>
+
+      <TicketSlide/>
+      
+      <main class="flex-main">
+          <Sidebar />
+          <Dashboard /> 
+      </main>
+        
+        
+    </div>
+    
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/Header.vue'
+import Sidebar from './components/Sidebar.vue'
+import Dashboard from './components/Dashboard.vue'
+import Ticket from './components/Ticket.vue'
+import TicketSlide from './components/TicketSlide.vue'
+
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Header,
+    Dashboard,
+    Sidebar,
+    Ticket,
+    TicketSlide
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="scss">
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
 }
+
+body{
+  display: flex;
+  flex-direction: column;
+  background: #eeefea;
+}
+
+html{
+  height: 100%;
+  min-height: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+.header-main{
+  display: flex;
+  flex: 1 0 20%;
+
+}
+
+.flex-main{
+  display: flex;
+  flex: 1;
+  height: 100vh;
+}
+
+
 </style>

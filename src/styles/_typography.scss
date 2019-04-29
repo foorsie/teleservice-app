@@ -1,0 +1,54 @@
+
+@import 'variables.scss';
+@import 'colors.scss';
+@import 'mixins.scss';
+
+
+
+h1{
+    font-family: $heading-font;
+    color: $color-primary;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size:28px;
+}
+
+h2{
+    font-family: $heading-font;
+    color: $color-secondary;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+h3{
+    font-family: $heading-font;
+    color: $color-secondary;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h4{
+    font-family: $paragraph;
+    font-size: 12px;
+}
+
+h5{
+    font-family: $paragraph;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+p{
+    font-family: $paragraph;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.text-small{
+    font-size: 13px;
+    font-family: $paragraph;
+    color: $white;
+    font-weight: 700;
+}
